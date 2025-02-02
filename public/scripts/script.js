@@ -329,7 +329,7 @@ class UI {
 
 class AppService {
     static getAppName() {
-        return fetch("https://nodeexpressapi-hk61.onrender.com/api/")
+        return fetch("https://nodeexpressapi-1w6g.onrender.com/api/")
             .then(response => {
                 if (response.status !== 200) {
                     console.error("[ERROR] Response status: ", response.status);
@@ -347,7 +347,7 @@ class AppService {
 
 class UserService {
     static getUsers() {
-        return fetch("https://nodeexpressapi-hk61.onrender.com/api/users/")
+        return fetch("https://nodeexpressapi-1w6g.onrender.com/api/users/")
             .then(response => {
                 if (response.status !== 200) {
                     console.error("[ERROR] Response status:", response.status);
@@ -384,7 +384,7 @@ class UserService {
 
         try {
             const response = await fetch(
-                "https://nodeexpressapi-hk61.onrender.com/api/users/",
+                "https://nodeexpressapi-1w6g.onrender.com/api/users/",
                 {
                     method: 'POST',
                     headers: {
@@ -440,7 +440,7 @@ class UserService {
 
         try {
             const response = await fetch(
-                `https://nodeexpressapi-hk61.onrender.com/api/users/${user.id}`,
+                `https://nodeexpressapi-1w6g.onrender.com/api/users/${user.id}`,
                 {
                     method: 'PATCH',
                     headers: {
@@ -479,7 +479,7 @@ class UserService {
 
         try {
             const response = await fetch(
-                `https://nodeexpressapi-hk61.onrender.com/api/users/${id}`,
+                `https://nodeexpressapi-1w6g.onrender.com/api/users/${id}`,
                 {
                     method: 'DELETE'
                 })
